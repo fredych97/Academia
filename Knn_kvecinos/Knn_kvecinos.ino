@@ -130,19 +130,19 @@ int knn (int k,int etiquetas, int tam_col, int tam_fil){
             
             }
 
-            Serial.println("k vecinos");
-       for(i=0;i<3;i++){
-        for(j=0;j<k;j++){
+            Serial.println("knn vecinos"); //imprimir la matriz knn vecinos
+       for(i=0;i<3;i++){                   //se debe utilizar dos for para poder graficar la matriz
+        for(j=0;j<k;j++){                  
+          if(matriz [i][j]>=0){             //se  utiliza un if para poder imprimir valores mayores a cero
           Serial.println(matriz[i][j]);
-          Serial.println(' ');
-          
-          
+          Serial.println("");
           }
-          Serial.println(' ');
+          }
+          Serial.println("");
         
        }
 
-            return etiqueta;
+            return etiqueta; //retorna la variable etiqueta
      
      }
 
