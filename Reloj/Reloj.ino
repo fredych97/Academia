@@ -17,8 +17,8 @@ void setup() {
 lcd.begin(16, 2);
 Timer1.initialize(1000000);   // Contador a 1 seg
 Timer1.attachInterrupt(cont);    // Se configurara el metodo
-attachInterrupt(0, horero, LOW);
-attachInterrupt(1, minutero, LOW);
+attachInterrupt(0, horero, RISING);
+attachInterrupt(1, minutero, RISING);
 }
 void loop() {
  minutos(); //funcion minutos
